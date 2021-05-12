@@ -84,10 +84,28 @@ https://www.youtube.com/watch?v=KM1U6DqZf8M&list=PL4cUxeGkcC9hYYGbV60Vq3IXYNfDk8
 
 # new vue3 features
 
-composition API- similar to React Hooks
+## composition API- similar to React Hooks
 
 <img src="./img2.png"></img>
 <img src="./img3.png"></img>
 
+The Composition API is a great new way to make Vue components & reuse component logic.
 For larger projects which require a bit more organisation, more code reuse, and more complex logic- using the compisition api is better suited to accommodate these requirements.
+
+## the setup() method
+
+You can create variables inside the set up function and then return the vriable to render them out in the template. they are not naturally 'reactive' variables- meaning when you reassign through a click event for example, the reference wont update.
+
+values inside the `data()` method are reactive by default- meaning when they change in the code, this will update automatically in the template render. 
+
+<img src="./img4.png"></img>
+
+# using ref for reactivity 
+
+this is where we use `ref` for reactive values! 
+
+<img src="./img5.png"></img>
+
+
+`ref(null)`
 
